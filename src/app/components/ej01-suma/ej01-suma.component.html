@@ -1,0 +1,17 @@
+<div class="border border-3 border-danger m-3">
+    <p class="bg-info">Suma con ngModel</p>
+
+    <label for="a" class="form-label">Introduce operando a:</label>
+    <input [(ngModel)]="operandoA" type="number" class="form-control" id="a">
+
+    <label for="b" class="form-label">Introduce operando b:</label>
+    <input [(ngModel)]="operandoB" type="number" class="form-control" id="b">
+
+    <button type="button" class="btn btn-primary" (click)="suma()">Sumar</button>
+
+    <p class="alert alert-warning">
+        {{operandoA}} + {{operandoB}} = {{resultado}}
+    </p>
+
+
+</div>

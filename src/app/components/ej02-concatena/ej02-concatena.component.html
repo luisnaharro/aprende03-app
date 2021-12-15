@@ -1,0 +1,15 @@
+<div class="border border-3 border-danger m-3">
+    <p class="bg-info">Concatena responsive String ngModle</p>
+
+    <label for="nombre" class="form-label">Introduce operando a:</label>
+    <input [(ngModel)]="nombre" type="text" class="form-control" id="nombre">
+
+    <label for="apellidos" class="form-label">Introduce operando b:</label>
+    <input [(ngModel)]="apellidos" type="text" class="form-control" id="apellidos">
+
+    <p class="alert alert-warning">
+        {{nombre}} {{apellidos}}
+    </p>
+
+
+</div>

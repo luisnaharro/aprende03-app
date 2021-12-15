@@ -1,0 +1,22 @@
+<div class="border border-3 border-danger m-3">
+    <p class="bg-info">Concatena con ngSubmit</p>
+
+    <!--ngSubmit trae el preventDefault-->
+    <form (ngSubmit)="concatenar()"> 
+
+        <label for="nombre" class="form-label">Introduce tu nombre:</label>
+        <input [(ngModel)]="nombre" type="text" class="form-control" id="nombre" name="nombre">
+
+        <label for="apellidos" class="form-label">Introduce tus apellidos:</label>
+        <input [(ngModel)]="apellidos" type="text" class="form-control" id="apellidos" name="apellidos">
+
+        <button type="submit" class="btn btn-primary">Concatenar</button>
+        
+        <p class="alert alert-warning">
+            {{resultado}}
+        </p>
+    </form>
+    
+
+
+</div>

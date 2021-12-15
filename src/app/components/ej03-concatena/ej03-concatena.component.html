@@ -1,0 +1,17 @@
+<div class="border border-3 border-danger m-3">
+    <p class="bg-info">Concatena al darle al boton String ngModle</p>
+
+    <label for="nombre" class="form-label">Introduce operando a:</label>
+    <input [(ngModel)]="nombre" type="text" class="form-control" id="nombre">
+
+    <label for="apellidos" class="form-label">Introduce operando b:</label>
+    <input [(ngModel)]="apellidos" type="text" class="form-control" id="apellidos">
+
+    <button type="button" class="btn btn-primary" (click)="concatenar()">Concatenar</button>
+
+    <p class="alert alert-warning">
+        {{resultado}}
+    </p>
+
+
+</div>

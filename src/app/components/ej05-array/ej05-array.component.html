@@ -1,0 +1,41 @@
+<div class="border border-3 border-danger m-3">
+    <p class="bg-info">Añadir nombres a un array</p>
+
+    <!--ngSubmit trae el preventDefault-->
+    <form (ngSubmit)="add()"> 
+
+        <label for="nombre" class="form-label">Introduce tu nombre:</label>
+        <input [(ngModel)]="nombre" type="text" class="form-control" id="nombre" name="nombre">
+
+        <label for="apellidos" class="form-label">Introduce tus apellidos:</label>
+        <input [(ngModel)]="apellidos" type="text" class="form-control" id="apellidos" name="apellidos">
+
+        <button type="submit" class="btn btn-primary">Añadir</button>
+
+    </form>
+
+    <table *ngIf="array.length != 0">
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>Nombre</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of array; let i = index">
+                <td>{{i+1}}</td>
+                <td>{{array[i]}}</td>
+                <td>
+                    <button (click)="borrarFila(i)" class="btn btn-danger">Borra</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <p *ngIf="array.length == 0">No hay nombres</p>
+    
+
+
+</div>
