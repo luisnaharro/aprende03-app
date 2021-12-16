@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ej06-b-padre.component.css']
 })
 export class Ej06BPadreComponent implements OnInit {
-  public _nombres: string[] = [];
+  private _nombres: string[] = [];
 
   constructor() { }
 
@@ -21,7 +21,7 @@ export class Ej06BPadreComponent implements OnInit {
     this._nombres.push(nombre);
   }
 
-  borrarFila(pos: number) {
+  borraFila(pos: number) {
     this._nombres.splice(pos, 1);
   }
 

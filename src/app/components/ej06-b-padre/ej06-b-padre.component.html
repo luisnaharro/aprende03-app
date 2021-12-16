@@ -1,7 +1,7 @@
 <div class="border border-3 border-danger m-3">
     <app-ej06-b-form (addEmitter)="add($event)"></app-ej06-b-form>
     <hr>
-    <app-ej06-b-list [nombres]="nombres"></app-ej06-b-list>
-
+    <app-ej06-b-list [nombres]="nombres"
+    (borraNombreEmitter)="borraFila($event)"></app-ej06-b-list>
 
 </div>
