@@ -1,0 +1,11 @@
+<form (ngSubmit)="add()"> 
+
+    <label for="nombre" class="form-label">Introduce tu nombre:</label>
+    <input [(ngModel)]="persona.nombre" type="text" class="form-control" id="nombre" name="nombre">
+
+    <label for="apellidos" class="form-label">Introduce tus apellidos:</label>
+    <input [(ngModel)]="persona.apellidos" type="text" class="form-control" id="apellidos" name="apellidos">
+
+    <button type="submit" class="btn btn-primary">Añadir</button>
+
+</form>
