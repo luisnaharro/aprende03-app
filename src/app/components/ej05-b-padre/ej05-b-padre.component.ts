@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-ej06-b-padre',
-  templateUrl: './ej06-b-padre.component.html',
-  styleUrls: ['./ej06-b-padre.component.css']
+  selector: 'app-ej05-b-padre',
+  templateUrl: './ej05-b-padre.component.html',
+  styleUrls: ['./ej05-b-padre.component.css']
 })
-export class Ej06BPadreComponent implements OnInit {
+export class Ej05BPadreComponent implements OnInit {
   private _nombres: string[] = [];
 
   constructor() { }

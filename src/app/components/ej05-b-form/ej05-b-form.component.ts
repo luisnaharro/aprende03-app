@@ -1,11 +1,11 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-ej06-b-form',
-  templateUrl: './ej06-b-form.component.html',
-  styleUrls: ['./ej06-b-form.component.css']
+  selector: 'app-ej05-b-form',
+  templateUrl: './ej05-b-form.component.html',
+  styleUrls: ['./ej05-b-form.component.css']
 })
-export class Ej06BFormComponent implements OnInit {
+export class Ej05BFormComponent implements OnInit {
   nombre: string = '';
   apellidos: string = '';
   @Output() addEmitter: EventEmitter<string> = new EventEmitter();

@@ -8,9 +8,10 @@ import { Ej02ConcatenaComponent } from './components/ej02-concatena/ej02-concate
 import { Ej03ConcatenaComponent } from './components/ej03-concatena/ej03-concatena.component';
 import { Ej04ConcatenaComponent } from './components/ej04-concatena/ej04-concatena.component';
 import { Ej05ArrayComponent } from './components/ej05-array/ej05-array.component';
-import { Ej06BPadreComponent } from './components/ej06-b-padre/ej06-b-padre.component';
-import { Ej06BFormComponent } from './components/ej06-b-form/ej06-b-form.component';
-import { Ej06BListComponent } from './components/ej06-b-list/ej06-b-list.component';
+import { Ej05BPadreComponent } from './components/ej05-b-padre/ej05-b-padre.component';
+import { Ej05BFormComponent } from './components/ej05-b-form/ej05-b-form.component';
+import { Ej05BListComponent } from './components/ej05-b-list/ej05-b-list.component';
+import { Ej05CArticulosComponent } from './ej05-c-articulos/ej05-c-articulos.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,10 @@ import { Ej06BListComponent } from './components/ej06-b-list/ej06-b-list.compone
     Ej03ConcatenaComponent,
     Ej04ConcatenaComponent,
     Ej05ArrayComponent,
-    Ej06BPadreComponent,
-    Ej06BFormComponent,
-    Ej06BListComponent
+    Ej05BPadreComponent,
+    Ej05BFormComponent,
+    Ej05BListComponent,
+    Ej05CArticulosComponent
   ],
   imports: [
     BrowserModule,

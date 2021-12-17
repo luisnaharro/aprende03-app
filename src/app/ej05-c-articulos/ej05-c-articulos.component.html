@@ -1,0 +1,54 @@
+<div class="border border-3 border-danger m-3">
+    <p class="bg-info">Añadir Articulos</p>
+
+    <form (ngSubmit)="add()"> 
+
+        <label for="ref" class="form-label">Introduce la REF:</label>
+        <input [(ngModel)]="ref" type="text" class="form-control" id="ref" name="ref">
+    
+        <label for="description" class="form-label">Introduce la descripcion:</label>
+        <input [(ngModel)]="description" type="text" class="form-control" id="description" name="description">
+    
+        <label for="precio" class="form-label">Introduce el Precio:</label>
+        <input [(ngModel)]="precio" type="number" class="form-control" id="precio" name="precio">
+
+        <label for="iva" class="form-label">Introduce el IVA:</label>
+        <input [(ngModel)]="iva" type="number" class="form-control" id="iva" name="iva">
+
+        <label for="stock" class="form-label">Introduce el STOCK:</label>
+        <input [(ngModel)]="stock" type="number" class="form-control" id="stock" name="stock">
+
+        <button type="submit" class="btn btn-primary">Añadir</button>
+    
+    </form>
+    
+    <hr>
+
+    <table *ngIf="articulos.length != 0" id="tabla">
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>REF</td>
+                <td>descripcion</td>
+                <td>Precio</td>
+                <td>IVA</td>
+                <td>Stock</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let articulo of articulos; let i = index">
+                <td>{{i+1}}</td>
+                <td>{{articulos[i].ref}}</td>
+                <td>{{articulos[i].description}}</td>
+                <td>{{articulos[i].precio}}</td>
+                <td>{{articulos[i].iva}}</td>
+                <td>{{articulos[i].stock}}</td>
+                <td>
+                    <button (click)="borraFila(i)" class="btn btn-danger">Borra</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+ 
+</div>

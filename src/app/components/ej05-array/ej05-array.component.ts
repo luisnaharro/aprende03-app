@@ -9,7 +9,7 @@ export class Ej05ArrayComponent implements OnInit {
   nombre: string = "";
   apellidos: string = "";
   resultado: string = "";
-  array: Array<String> = [];
+  array: Array<String> = []; //array de los resultados
   
 
   constructor() { }
@@ -20,6 +20,10 @@ export class Ej05ArrayComponent implements OnInit {
   add(): void {
     this.resultado = `${this.nombre} ${this.apellidos}`
     this.array.push(this.resultado);
+  }
+
+  borraFila(pos: number) {
+    this.array.splice(pos, 1);
   }
 
 }
